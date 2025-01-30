@@ -30,7 +30,7 @@ export const fetchMovies = async (query) => {
     const response = await axios.get(endpoint, API_OPTIONS);
     return response.data.results;
   } catch (error) {
-    throw new Error("Error fetching movies");
+    throw new Error("Error fetching movies", error);
   }
 };
 

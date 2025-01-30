@@ -10,7 +10,7 @@ const Search = ({ searchTerm, setSearchTerm }) => {
           placeholder="Search through thousands of movies"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)} />
-        <MdClear className="text-white w-6 h-6 cursor-pointer" onClick={(e) => setSearchTerm("")}/>
+        <MdClear className="text-white w-6 h-6 cursor-pointer" onClick={() => setSearchTerm("")}/>
       </div>
     </div>
   );
